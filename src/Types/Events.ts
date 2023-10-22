@@ -28,6 +28,7 @@ export type BaileysEventMap = {
     'chats.update': ChatUpdate[]
     /** delete chats with given ID */
     'chats.delete': string[]
+    'chats.phoneNumberShare': {lid: string, jid: string}
     /** presence of contact in a chat updated */
     'presence.update': { id: string, presences: { [participant: string]: PresenceData } }
 
